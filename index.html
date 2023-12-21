@@ -1,0 +1,98 @@
+<html>
+
+<title>Avoid Covid</title>
+
+<!-- JS -->
+<script src='scripts/jquery.min.js'></script>
+<script src='scripts/page.js'></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+<!-- HTML -->
+<body>
+  <div class='outer-container'>
+      <div class='game-window' id='gameBorder'>
+        
+        <!-- Main Menu -->
+        <div id = 'main'>
+          <img id='bgimg0' src="src\frontpage_background.jpg">
+            <div id='header0'>
+              <div id='texti0'>Covid Comets</div> 
+            </div>
+              <input type="button" id='playBtn' value="Play Game!"/> <br>
+              <input type="button" id='settingsBtn' value="Settings"/>
+              <div id='settingsPNL'>
+                <div id='settings'> Settings </div><br><br>
+                <div class="slidecontainer">
+                  <p id='volume'>Volume: </p><p id='volumeId'>50</p>
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+                <br>
+                <div id='difficulty'> Difficulty </div><br>
+                <input type="button" id='easyBtn' value="Easy"/>
+                <input type="button" id='normalBtn' value="Normal"/>
+                <input type="button" id='hardBtn' value="Hard"/><br><br><br><br>
+                <input type="button" id='closeBtn' value="Close"/>
+              </div> 
+          </img>
+        </div>
+        <!-- Settings -->
+
+        <!-- Tutorial -->
+        <div id='tutorial'>
+          <div id='t0'> How to play </div><br>
+          <div id='t1'> Avoid COVID particles! </div><br>
+          <div><img id='Cgif' src = "src\covidstriod.png"/> </div><br>
+          <div id='t2'> Collect masks and vaccines! </div>
+          <div id='t3'> Gain as many points as possible! </div><br>
+          <div ><img id='Mgif' src = "src\mask.gif"/><img id='Vgif' src = "src\vacc.gif"/></div><br>
+          <input type="button" id='startBtn' value="Start"/>
+        </div>
+        <!-- Splash Screen -->
+        <div id='splashscreen'>
+          <div id='SSReady'> Get Ready! </div><br>
+          <div><img src = "src\arrowkeys.png"/> </div><br>
+          <div id='SStext'> Use arrow keys to move. </div>
+        </div>
+        
+        <!-- Actual Game -->
+        <div id="actual_game">
+          <div class="asteroidSection">
+              <div class="curAstroid"> </div>
+          </div>
+          <div class='playerSection'>
+            <img src = "src\player\player.gif" id='player' >
+          </div>
+          <div id="game_right_section">
+              <div id="scoreword">
+                  SCORE
+                  <div id="score_num">0</div>
+              </div>
+              <div id="covid_danger">COVID DANGER
+              <div id="covid_danger_num"></div></div>
+              <div id="level">LEVEL
+              <div id="covid_level"></div></div>
+          </div>
+        </div>    
+      </div> 
+      <!-- end game-window -->
+      <div id = 'death'>
+        <img id='bgimg' src="src\frontpage_background.jpg">
+          <div id='header'>
+            <div id='text0'>Covid Comets</div> 
+          </div>
+          <div id='redbox'>
+            <br>
+            GAME OVER!<br><br>
+            YOU HAVE TO QUARANTINE!<br><br>
+            <div id='scoreId'>s</div><br>
+            <input type="button" id='startOverBtn' value="Start Over"/>
+          </div>
+        </img>
+      </div>
+  </div> <!-- end outer-container -->
+</body>
+
+</html>
