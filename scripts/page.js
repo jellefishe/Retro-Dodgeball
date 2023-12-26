@@ -276,6 +276,7 @@ function startGame(){
     }, 100);
   },3000);
 }
+
 function startPlaying(){
   document.getElementById('player').style.position = 'abosolute';
   document.getElementById('player').style.left = '50%';
@@ -309,6 +310,7 @@ function startPlaying(){
   },vaccineOccurrence);
 
 }
+
 function spawnComets3(){
   let xEnd3 = 0;
   let xStart3 = 0;
@@ -370,7 +372,6 @@ function spawnComets3(){
   }
 
 function moveComet3(CometId3,where,xSpeed,ySpeed){
-
   if(cometIdx3 %4 <=0 ){
     newPosx3 = parseInt(CometId3.css("left")) + spdMultiplier* xSpeed/140;
     newPosy3 = parseInt(CometId3.css("top")) + spdMultiplier*ySpeed/140;
@@ -397,6 +398,7 @@ function moveComet3(CometId3,where,xSpeed,ySpeed){
     document.getElementById('Comet3'+cometIdx3).style.display = 'none';
   }
 }
+
 function spawnComets2(){
   let xEnd2 = 0;
   let xStart2 = 0;
@@ -635,6 +637,7 @@ function checkCollisions(){
     beat.play();
   }
 }
+
 function spawnVacc(){
   //let xLoc = getRandomNumber(0,maxPersonPosX);
   //let yLoc = getRandomNumber(0,maxPersonPosY);
@@ -652,7 +655,7 @@ function spawnVacc(){
 function despawnVacc(){
   document.getElementById('VaccId').style.display = 'none';
 }
-// TODO: ADD YOUR FUNCTIONS HERE
+
 function spawnMask(){
   //let xLoc = getRandomNumber(0,maxPersonPosX);
   //let yLoc = getRandomNumber(0,maxPersonPosY);
@@ -688,6 +691,7 @@ function moveLeft(){
   else {document.getElementById("player").src = "src/player/player_left.gif";}
   player.css("left", newPos);
 }
+
 function moveRight(){
   if(!isDiag){
     var newPos = parseInt(player.css("left")) + PERSON_SPEED;
@@ -704,6 +708,7 @@ function moveRight(){
   else {document.getElementById("player").src = "src/player/player_right.gif";}
   player.css("left", newPos);
 }
+
 function moveUp(){
   if(!isDiag){
     var newPos = parseInt(player.css("top")) - PERSON_SPEED;
@@ -720,6 +725,7 @@ function moveUp(){
   else {document.getElementById("player").src = "src/player/player_up.gif";}
   player.css("top", newPos);
 }
+
 function moveDown(){
   if(!isDiag){
     var newPos = parseInt(player.css("top")) + PERSON_SPEED;
