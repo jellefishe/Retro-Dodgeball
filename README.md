@@ -1,7 +1,7 @@
 Jquery css/html project:
 
-small fun dodge game with 5 second invinsibility in the beginning
+Small fun dodge game with 5 second invincibility in the beginning
 
-try to get the most points by staying alive the longest!
+Try to get the most points by staying alive the longest!
 
-leave your score in the comment section
+Leave your score in the comment section
