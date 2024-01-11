@@ -1,4 +1,4 @@
-Jquery css/html project
+Jquery css/html project:
 
 small fun dodge game with 5 second invinsibility in the beginning
 
